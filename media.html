@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UCAR - 미디어</title>
+  <style>
+    /* 기본 스타일 */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    /* 상단 헤더 */
+    header {
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 35px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    nav {
+      display: flex;
+      gap: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #007bff;
+    }
+
+    /* 미디어 섹션 */
+    .media-section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .media-section h2 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+    }
+
+    .media-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .media-item {
+      width: 250px;
+      height: 150px;
+      background-color: #e0e0e0;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 1.2em;
+      color: #999;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .media-item:hover {
+      transform: scale(1.05);
+    }
+
+    .media-item a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* 푸터 */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">UCAR</a></div>
+    <nav>
+      <a href="gucsan.html">내차팔기</a>
+      <a href="buycar.html">내차사기</a>
+      <a href="rentcar.html">렌트</a>
+      <a href="finance.html">금융</a>
+      <a href="media.html">미디어</a>
+      <a href="mypage.html">마이페이지</a>
+    </nav>
+  </header>
+
+  <!-- 미디어 섹션 -->
+  <section class="media-section">
+    <h2>UCAR 미디어</h2>
+    <div class="media-grid">
+      <div class="media-item">
+        <a href="#">뉴스 보기</a>
+      </div>
+      <div class="media-item">
+        <a href="#">차량 리뷰</a>
+      </div>
+      <div class="media-item">
+        <a href="#">동영상</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 UCAR. All rights reserved.</p>
+  </footer>
+</body>
+</html>
