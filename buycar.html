@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UCAR - 내 차 사기</title>
+  <style>
+    /* 기본 스타일 */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    /* 상단 헤더 */
+    header {
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 35px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    nav {
+      display: flex;
+      gap: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #007bff;
+    }
+
+    /* 검색 섹션 */
+    .search-section {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #00bfffc4;
+      color: #fff;
+    }
+
+    .search-section h2 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+    }
+
+    .search-section select,
+    .search-section button {
+      padding: 10px;
+      margin: 5px;
+      font-size: 1em;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .search-section select {
+      background-color: #fff;
+      color: #333;
+    }
+
+    .search-section button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .search-section button:hover {
+      background-color: #0056b3;
+    }
+
+    /* 추천 차량 섹션 */
+    .recommend-section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .recommend-section h2 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .recommend-cars {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .recommend-car {
+      width: 250px;
+      height: 150px;
+      background-color: #e0e0e0;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2em;
+      color: #999;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .recommend-car:hover {
+      transform: scale(1.05);
+    }
+
+    /* 푸터 */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">UCAR</a></div>
+    <nav>
+      <a href="gucsan.html">내차팔기</a>
+      <a href="buycar.html">내차사기</a>
+      <a href="rentcar.html">렌트</a>
+      <a href="finance.html">금융</a>
+      <a href="media.html">미디어</a>
+      <a href="mypage.html">마이페이지</a>
+    </nav>
+  </header>
+
+  <!-- 검색 섹션 -->
+  <section class="search-section">
+    <h2>원하는 차량 조회</h2>
+    <div>
+      <select>
+        <option>차량 종류</option>
+        <option>국산</option>
+        <option>수입</option>
+        <option>전기차</option>
+      </select>
+      <select>
+        <option>제조사</option>
+        <option>현대</option>
+        <option>기아</option>
+        <option>대우/GM</option>
+        <option>쌍용</option>
+      </select>
+      <select>
+        <option>모델</option>
+      </select>
+      <button>검색하기</button>
+    </div>
+  </section>
+
+  <!-- 추천 차량 섹션 -->
+  <section class="recommend-section">
+    <h2>추천 차량</h2>
+    <div class="recommend-cars">
+      <div class="recommend-car">추천 차량 1</div>
+      <div class="recommend-car">추천 차량 2</div>
+      <div class="recommend-car">추천 차량 3</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 UCAR. All rights reserved.</p>
+  </footer>
+</body>
+</html>
