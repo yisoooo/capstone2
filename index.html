@@ -47,6 +47,24 @@
       align-items: center;
     }
 
+    .search-bar {
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      padding: 5px 15px;
+      display: flex;
+      align-items: center;
+    }
+
+    .search-bar input {
+      border: none;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .search-bar input::placeholder {
+      color: #676767;
+    }
+
     nav {
       display: flex;
       gap: 15px;
@@ -188,6 +206,9 @@
       <a href="finance.html">금융</a>
       <a href="media.html">미디어</a>
     </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="검색">
+  </div>
   </header>
 
   <!-- Best 섹션 -->
