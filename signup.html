@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>회원가입</title>
   <style>
+    /* 기존 CSS 유지 */
     body {
       font-family: Arial, sans-serif;
       background-color: #f4f4f9;
@@ -75,20 +76,10 @@
       background-color: #0056b3;
     }
 
-    .input-group small {
-      font-size: 12px;
-      color: #888;
-    }
-
-    .input-group .error {
-      color: #e74c3c;
-      font-size: 12px;
-    }
-
     .signup-container button[type="submit"] {
       width: 100%;
       padding: 12px;
-      background-color:  #00bfffc4;
+      background-color: #00bfffc4;
       color: white;
       border: none;
       border-radius: 5px;
@@ -183,7 +174,7 @@
     </form>
 
     <div class="link">
-      <p>이미 계정이 있으신가요? <a href="login_2.html">로그인</a></p>
+      <p>이미 계정이 있으신가요? <a href="login.html">로그인</a></p>
     </div>
   </div>
 
@@ -202,32 +193,11 @@
       }
     });
 
-    // 비밀번호 확인
+    // 가입하기 버튼 클릭 시 가입 완료 메시지 표시
     document.getElementById('signupForm').addEventListener('submit', function(event) {
-      let valid = true;
-
-      // 비밀번호 확인
-      const password = document.getElementById('password').value;
-      const passwordConfirm = document.getElementById('passwordConfirm').value;
-
-      if (password !== passwordConfirm) {
-        document.getElementById('passwordConfirmError').textContent = "비밀번호가 일치하지 않습니다.";
-        valid = false;
-      } else {
-        document.getElementById('passwordConfirmError').textContent = "";
-      }
-
-      // 비밀번호 유효성 (최소 8자)
-      if (password.length < 8) {
-        document.getElementById('passwordError').textContent = "비밀번호는 최소 8자 이상이어야 합니다.";
-        valid = false;
-      } else {
-        document.getElementById('passwordError').textContent = "";
-      }
-
-      if (!valid) {
-        event.preventDefault(); // 폼 제출 막기
-      }
+      event.preventDefault(); // 폼 기본 동작 방지
+      alert("가입이 완료되었습니다");
+      window.location.href = "login.html"; // index.html로 리다이렉트
     });
   </script>
 
